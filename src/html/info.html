@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Telegram Push</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <main class="container">
+        <article id="content" style="white-space: pre;"></article>
+    </main>
+
+    <script>
+        document.getElementById("content").textContent = atob("[MESSAGE]");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Install - Telegram Push</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <main class="container">
+        <h1>Install</h1>
+        <form action="/install" method="POST">
+            <label>
+                Telegram Key
+                <input type="text" name="tgkey" value="" required>
+            </label>
+            <label>
+                Worker URL
+                <input type="text" id="worker-url" value="" name="worker-url" required>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script>
+        function randomString(n) {
+            return Array.from(crypto.getRandomValues(new Uint8Array(n))).map((i) => i.toString(16).padStart(2, '0')).join('');
+        }
+        randomString(10);
+        document.getElementById("worker-url").value = `${location.protocol}//${location.host}`;
+    </script>
+</body>
+
+</html>

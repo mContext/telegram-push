@@ -1,0 +1,8 @@
+name = "telegram-push3"
+main = "src/worker.ts"
+compatibility_date = "2023-06-28"
+
+
+[[kv_namespaces]]
+binding = "db"
+id = "KVID"
