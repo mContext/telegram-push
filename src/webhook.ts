@@ -39,7 +39,7 @@ export async function webhook(request: Request, env: Env, ctx: ExecutionContext)
 	switch (splits[0]) {
 		case '/ping':
 			if (splits.length == 1) {
-				await tgapi.snedMessage(tgkey, chatid, '/ping agentID');
+				await tgapi.snedMessage(tgkey, chatid, '/ping agentID 或直接发送agentID');
 			} else if (splits.length > 1) {
 				await tgapi.snedMessage(tgkey, chatid, 'https://link.ingress.com/?link=https://intel.ingress.com/agent/' + splits[1]);
 			}
@@ -61,7 +61,7 @@ export async function webhook(request: Request, env: Env, ctx: ExecutionContext)
 			break;
 
 		default:
-			await tgapi.snedMessage(tgkey, chatid, 'unknown command');
+			await tgapi.snedMessage(tgkey, chatid, 'https://link.ingress.com/?link=https://intel.ingress.com/agent/' + splits[0]);
 			break;
 	}
 
