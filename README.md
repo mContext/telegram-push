@@ -11,7 +11,7 @@
 
 1. 点这个
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/sduoduo233/telegram-push)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/mContext/telegram-push)
 
 2. 登陆 Github
 
@@ -28,7 +28,7 @@
 
 ![Create API Token](https://files.yourblog.eu.org/2f0398f4-1b14-44b9-acdd-a0f90f2f29c0.png)
 
-设置一下 Account 和 Zone，然后点创建： 
+设置一下 Account 和 Zone，然后点创建：
 ![Create API Token](https://files.yourblog.eu.org/a1fc440c-6202-4ffd-b244-d6bf5c3c9d64.png)
 
 然后把 API Token 填进去：
