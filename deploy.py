@@ -16,7 +16,7 @@ print("=> Get KV id...")
 kv_id = ""
 data = json.loads(sb.getoutput("npx wrangler kv:namespace list"))
 for i in data:
-    if "telegram-push3-db" in i["title"]:
+    if "telegram-push-db" in i["title"]:
         kv_id = i["id"]
         print("KV", i["title"], "OK")
     else:
